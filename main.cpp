@@ -1,11 +1,16 @@
 #include <stdio.h>
 
-//TODO: Create mul, divide functions here and fix the divide bug
 float add(int a,int b){
 	return a+b;
 }
 float subtract(int a,int b){
 	return a-b;
+}
+float mul(int a,int b){
+	return a*b;
+}
+float divide(int a,int b){
+	return (float)a/b;
 }
 int main(){
     int a,b;
@@ -21,10 +26,10 @@ int main(){
 	        result = subtract(a,b);
 	        break;
 	    case '*': 
-	        result = a*b;
+	        result = mul(a,b);
 	        break;
 	    case '/': 
-	        result = a/b;
+	        result = divide(a,b);
 	        break;
 	    default : 
 	        printf("UnKnown Operation try +,-,* or / \n");
