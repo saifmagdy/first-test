@@ -1,7 +1,9 @@
 #include <stdio.h>
 
-//TODO: Create add, subtract, mul, divide functions here and fix the divide bug
-
+//TODO: Create subtract, mul, divide functions here and fix the divide bug
+float add(int a,int b){
+	return a+b;
+}
 
 int main(){
     int a,b;
@@ -11,7 +13,7 @@ int main(){
 	
 	switch (operation) {
 	    case '+':
-	        result = a+b; 
+	        result = add(a,b); 
 	        break;
 	    case '-': 
 	        result = a-b;
