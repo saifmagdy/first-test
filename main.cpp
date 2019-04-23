@@ -1,17 +1,6 @@
 #include <stdio.h>
+#include "calculator.h"
 
-float add(int a,int b){
-	return a+b;
-}
-float subtract(int a,int b){
-	return a-b;
-}
-float mul(int a,int b){
-	return a*b;
-}
-float divide(int a,int b){
-	return (float)a/b;
-}
 int main(){
     int a,b;
     char operation;
