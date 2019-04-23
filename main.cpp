@@ -1,10 +1,12 @@
 #include <stdio.h>
 
-//TODO: Create subtract, mul, divide functions here and fix the divide bug
+//TODO: Create mul, divide functions here and fix the divide bug
 float add(int a,int b){
 	return a+b;
 }
-
+float subtract(int a,int b){
+	return a-b;
+}
 int main(){
     int a,b;
     char operation;
@@ -16,7 +18,7 @@ int main(){
 	        result = add(a,b); 
 	        break;
 	    case '-': 
-	        result = a-b;
+	        result = subtract(a,b);
 	        break;
 	    case '*': 
 	        result = a*b;
